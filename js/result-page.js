@@ -1,3 +1,4 @@
+import {renderPiSign} from './pi-sign-view.js';
 import {formatBirthday, searchDigits, scorePrediction} from './search.js';
 import {loadDigits} from './data.js';
 import {$, node, link, labels, session} from './ui.js';
@@ -22,6 +23,8 @@ export function initResult() {
       const sequence = formatBirthday(Number(draft.year), Number(draft.month), Number(draft.day), draft.mode);
       const result = searchDigits(digits, sequence);
       const score = scorePrediction(result.position, draft.prediction);
+      renderPiSign($('pi-sign'), result);
+      document.querySelector('.report-orbit').hidden = true;
       $('data-status').textContent = 'INTEGRITY VERIFIED';
       box.replaceChildren();
       // Recompute against verified data on every load; never trust a stored position.
@@ -45,6 +48,8 @@ export function initResult() {
       box.append(actions, node('p', discovery.saved ? 'Discovery saved to this device’s leaderboard.' : 'This browser could not save your leaderboard entry. Your result is still accurate.', 'saved-note'));
       box.classList.add('revealed');
     } catch {
+      $('pi-sign').hidden = true;
+      document.querySelector('.report-orbit').hidden = false;
       $('data-status').textContent = 'π DATA UNAVAILABLE';
       box.replaceChildren(node('h2', 'We need the verified digits first.'), node('p', 'Your discovery is safe in this tab. We’ll display it after the dataset passes its integrity check.', 'result-copy'));
       $('result-error').textContent = 'We couldn’t load and verify the π data. Check your connection, then retry.';

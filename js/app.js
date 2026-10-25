@@ -4,7 +4,7 @@ if (page === 'search') {
   const {initSearch} = await import('./search-page.js');
   initSearch();
 } else if (page === 'result') {
-  const {initResult} = await import('./result-page.js');
+  const {initResult} = await import('./result-page.js?v=3');
   initResult();
 } else if (page === 'leaderboard') {
   const {initLeaderboard} = await import('./leaderboard-page.js');

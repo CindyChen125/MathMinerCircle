@@ -1220,3 +1220,41 @@ a.secondary-button { display:inline-flex; align-items:center; justify-content:ce
   .result-aside p { max-width:none; }
   .result-stage .terminal-top { flex-wrap:wrap; gap:10px; font-size:10px; }
 }
+
+/* π Signs: a fictional reading selected by a verified following digit. */
+.pi-sign { padding:24px 0 28px; margin-bottom:28px; border-bottom:1px solid var(--line); }
+.pi-sign h2 { font-size:26px; }
+.pi-sign .sign-intro { margin-top:12px; font-size:13px; }
+.sign-reveal { width:100%; margin-top:20px; min-height:46px; font:500 11px var(--mono); letter-spacing:.6px; color:var(--cyan); }
+.sign-reading { padding-top:24px; }
+.sign-reading:focus { outline:none; }
+.sign-seal { width:140px; height:140px; display:block; margin:0 auto 15px; overflow:visible; }
+.sign-dial { fill:none; stroke:#31575c; stroke-width:1; }
+.sign-point { fill:#385b68; }
+.sign-point.active { fill:var(--cyan); }
+.sign-seal text { fill:var(--cyan); font:500 40px var(--mono); }
+.sign-reading h3 { font:500 27px/1.2 var(--display); letter-spacing:-.6px; text-align:center; }
+.pi-sign .sign-traits { font-size:12px; color:var(--cyan); line-height:1.8; margin-top:10px; }
+.sign-reading>.sign-traits { text-align:center; }
+.pi-sign .sign-description { font-size:14px; line-height:1.85; margin-top:18px; }
+.sign-lucky { display:flex; justify-content:space-between; align-items:center; gap:12px; border-block:1px solid var(--line); padding:14px 0; margin-top:22px; }
+.sign-lucky span { color:var(--muted); font-size:12px; }
+.sign-lucky strong { color:var(--cyan); font:500 30px var(--mono); }
+.pi-sign .sign-proof { font-size:12px; line-height:1.85; margin-top:18px; }
+.pi-sign .sign-disclaimer { font-size:11px; line-height:1.8; color:var(--muted); margin-top:18px; }
+.sign-catalog { margin-top:20px; }
+.sign-catalog summary { color:var(--cyan); font-size:13px; cursor:pointer; padding:10px 0; }
+.sign-catalog summary::marker { color:var(--cyan); }
+.sign-catalog ol { margin:6px 0 0; padding:0; list-style:none; }
+.sign-catalog li { padding:18px 0; border-top:1px solid var(--line); }
+.sign-catalog h4 { font:500 15px/1.5 var(--display); margin:0; }
+.sign-catalog .your-sign h4 { color:var(--cyan); }
+.sign-catalog li p { font-size:12px; margin-top:8px; }
+.sign-catalog .sign-catalog-lucky { color:var(--text); }
+@media(max-width:650px) {
+ .result-aside:has(.pi-sign:not([hidden])) { border-top:0; padding-top:0; }
+ .pi-sign { padding-top:0; }
+ .sign-seal { width:125px; height:125px; }
+ .sign-reading h3 { font-size:27px; }
+ .pi-sign .sign-description { max-width:55ch; }
+}
