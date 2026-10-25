@@ -1,0 +1,6 @@
+{
+  "source": "https://www.angio.net/pi/digits/pi1000000.txt",
+  "digits": 1000000,
+  "sha256": "7806ee47461b49ef1f578e14461b2c83c09c6d7a9a914275da1d71e9cbbf7069",
+  "prefix": "14159265358979323846264338327950288419716939937510"
+}

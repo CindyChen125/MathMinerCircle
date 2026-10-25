@@ -1,0 +1,17 @@
+# Local machine and editor state
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+*.log
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local design review captures and generation scratch space
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/*.local.json
