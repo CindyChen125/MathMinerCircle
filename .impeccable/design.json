@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T10:17:44.795337+00:00",
+  "title": "Design System: π Finder",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0218 257.25)",
+          "oklch(26% 0.0218 257.25)",
+          "oklch(38% 0.0218 257.25)",
+          "oklch(49% 0.0218 257.25)",
+          "oklch(61% 0.0218 257.25)",
+          "oklch(72% 0.0218 257.25)",
+          "oklch(84% 0.0218 257.25)",
+          "oklch(95% 0.0218 257.25)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0325 242.05)",
+          "oklch(26% 0.0325 242.05)",
+          "oklch(38% 0.0325 242.05)",
+          "oklch(49% 0.0325 242.05)",
+          "oklch(61% 0.0325 242.05)",
+          "oklch(72% 0.0325 242.05)",
+          "oklch(84% 0.0325 242.05)",
+          "oklch(95% 0.0325 242.05)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0310 245.06)",
+          "oklch(26% 0.0310 245.06)",
+          "oklch(38% 0.0310 245.06)",
+          "oklch(49% 0.0310 245.06)",
+          "oklch(61% 0.0310 245.06)",
+          "oklch(72% 0.0310 245.06)",
+          "oklch(84% 0.0310 245.06)",
+          "oklch(95% 0.0310 245.06)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(15% 0.0085 225.08)",
+          "oklch(26% 0.0085 225.08)",
+          "oklch(38% 0.0085 225.08)",
+          "oklch(49% 0.0085 225.08)",
+          "oklch(61% 0.0085 225.08)",
+          "oklch(72% 0.0085 225.08)",
+          "oklch(84% 0.0085 225.08)",
+          "oklch(95% 0.0085 225.08)"
+        ]
+      },
+      "cyan": {
+        "role": "primary",
+        "displayName": "Cyan",
+        "tonalRamp": [
+          "oklch(15% 0.1124 197.40)",
+          "oklch(26% 0.1124 197.40)",
+          "oklch(38% 0.1124 197.40)",
+          "oklch(49% 0.1124 197.40)",
+          "oklch(61% 0.1124 197.40)",
+          "oklch(72% 0.1124 197.40)",
+          "oklch(84% 0.1124 197.40)",
+          "oklch(95% 0.1124 197.40)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field",
+        "tonalRamp": [
+          "oklch(15% 0.0292 251.51)",
+          "oklch(26% 0.0292 251.51)",
+          "oklch(38% 0.0292 251.51)",
+          "oklch(49% 0.0292 251.51)",
+          "oklch(61% 0.0292 251.51)",
+          "oklch(72% 0.0292 251.51)",
+          "oklch(84% 0.0292 251.51)",
+          "oklch(95% 0.0292 251.51)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "Field Border",
+        "tonalRamp": [
+          "oklch(15% 0.0354 239.61)",
+          "oklch(26% 0.0354 239.61)",
+          "oklch(38% 0.0354 239.61)",
+          "oklch(49% 0.0354 239.61)",
+          "oklch(61% 0.0354 239.61)",
+          "oklch(72% 0.0354 239.61)",
+          "oklch(84% 0.0354 239.61)",
+          "oklch(95% 0.0354 239.61)"
+        ]
+      },
+      "button-ink": {
+        "role": "neutral",
+        "displayName": "Button Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0376 226.15)",
+          "oklch(26% 0.0376 226.15)",
+          "oklch(38% 0.0376 226.15)",
+          "oklch(49% 0.0376 226.15)",
+          "oklch(61% 0.0376 226.15)",
+          "oklch(72% 0.0376 226.15)",
+          "oklch(84% 0.0376 226.15)",
+          "oklch(95% 0.0376 226.15)"
+        ]
+      },
+      "button-hover": {
+        "role": "primary",
+        "displayName": "Button Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0845 195.81)",
+          "oklch(26% 0.0845 195.81)",
+          "oklch(38% 0.0845 195.81)",
+          "oklch(49% 0.0845 195.81)",
+          "oklch(61% 0.0845 195.81)",
+          "oklch(72% 0.0845 195.81)",
+          "oklch(84% 0.0845 195.81)",
+          "oklch(95% 0.0845 195.81)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary",
+        "tonalRamp": [
+          "oklch(15% 0.0326 235.61)",
+          "oklch(26% 0.0326 235.61)",
+          "oklch(38% 0.0326 235.61)",
+          "oklch(49% 0.0326 235.61)",
+          "oklch(61% 0.0326 235.61)",
+          "oklch(72% 0.0326 235.61)",
+          "oklch(84% 0.0326 235.61)",
+          "oklch(95% 0.0326 235.61)"
+        ]
+      },
+      "terminal-bar": {
+        "role": "neutral",
+        "displayName": "Terminal Bar",
+        "tonalRamp": [
+          "oklch(15% 0.0273 249.29)",
+          "oklch(26% 0.0273 249.29)",
+          "oklch(38% 0.0273 249.29)",
+          "oklch(49% 0.0273 249.29)",
+          "oklch(61% 0.0273 249.29)",
+          "oklch(72% 0.0273 249.29)",
+          "oklch(84% 0.0273 249.29)",
+          "oklch(95% 0.0273 249.29)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "tonalRamp": [
+          "oklch(15% 0.0845 28.84)",
+          "oklch(26% 0.0845 28.84)",
+          "oklch(38% 0.0845 28.84)",
+          "oklch(49% 0.0845 28.84)",
+          "oklch(61% 0.0845 28.84)",
+          "oklch(72% 0.0845 28.84)",
+          "oklch(84% 0.0845 28.84)",
+          "oklch(95% 0.0845 28.84)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Exhibit headline."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Form and section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Instructions and ordinary controls."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Instrument metadata."
+      },
+      "digits": {
+        "displayName": "Digits",
+        "purpose": "Decorative digit stream."
+      }
+    },
+    "shadows": [
+      {
+        "name": "action-hover",
+        "value": "0 6px 24px #6ae9ec15",
+        "purpose": "Primary action hover."
+      },
+      {
+        "name": "live-signal",
+        "value": "0 0 9px #6ae9ec55",
+        "purpose": "Live status dots."
+      },
+      {
+        "name": "scan-line",
+        "value": "0 0 24px #6ae9ec88",
+        "purpose": "Discovery sweep."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": ".2s",
+        "purpose": "Border, fill and glow changes."
+      },
+      {
+        "name": "scan-sweep",
+        "value": "1.5s ease-in-out infinite alternate",
+        "purpose": "Vertical scan line."
+      },
+      {
+        "name": "result-reveal",
+        "value": ".6s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Reveal result with blur and rise."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1500px"
+      },
+      {
+        "name": "container",
+        "value": "1350px"
+      },
+      {
+        "name": "compact",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "650px"
+      }
+    ],
+    "pageFlow": {
+      "documents": [
+        "index.html",
+        "search.html",
+        "result.html",
+        "leaderboard.html"
+      ],
+      "navigation": "Native relative links; Home, Explorer and Leaderboard in header; Result follows a completed scan. Mobile navigation occupies a row beneath the brand.",
+      "progress": "Search and Result expose three journey stages with aria-current=step.",
+      "resultLayout": "Report and explanation use a 1.65fr/1fr grid, stacked at 650px.",
+      "scanLayout": "Hide the coordinate form and center the terminal within an 820px workspace during the four-second scan."
+    },
+    "piSigns": {
+      "surface": "result.html sidebar; stacked below report on mobile",
+      "components": "Native reveal button, ten-point SVG selector dial, sign reading, ruled lucky-number row, native details catalog.",
+      "palette": "Existing cyan, muted, text, line and navy tokens.",
+      "motion": "Existing revealed animation; global reduced-motion override applies.",
+      "truth": "Actual next decimal digit selects a fictional reading; no assigned sign when match or following digit is unavailable."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Cyan scan and confirmation action.",
+      "html": "<button class=\"ds-primary\">INITIATE SCAN</button>",
+      "css": ".ds-primary {\n  border:1px solid #88f0ee;\n  background:var(--cyan);\n  color:#05202a;\n  border-radius:5px;\n  min-height:48px;\n  padding:12px 20px;\n  font:600 11px var(--mono);\n  letter-spacing:1.1px;\n  display:flex;\n  justify-content:center;\n  align-items:center;\n  gap:12px;\n  transition:background .2s,box-shadow .2s}\n.ds-primary:hover {\n  background:#a7ffff;\n  box-shadow:0 6px 24px #6ae9ec15}\n.ds-primary:disabled {\n  opacity:.45;\n  cursor:wait}\n.ds-primary {font-family:var(--mono);cursor:pointer}.ds-primary:focus-visible {outline:2px solid var(--cyan);outline-offset:5px}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting return and result actions.",
+      "html": "<button class=\"ds-secondary\">Back to explorer</button>",
+      "css": ".ds-secondary {\n  background:#10232e;\n  border:1px solid #3d5968;\n  border-radius:4px;\n  padding:11px 14px;\n  min-height:42px;\n  color:var(--text);\n  font-size:11px;\n  transition:border-color .2s,background .2s}\n.ds-secondary:hover {\n  border-color:var(--cyan);\n  background:#183540}\n.ds-secondary {font-family:var(--sans);cursor:pointer}.ds-secondary:focus-visible {outline:2px solid var(--cyan);outline-offset:5px}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "description": "Underlined supporting control.",
+      "html": "<button class=\"ds-text\">Skip animation <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-text {\n  border:0;\n  background:transparent;\n  padding:6px 0;\n  color:#b1c9d4;\n  font-size:11px;\n  text-decoration:underline;\n  text-underline-offset:4px}\n.ds-text:hover {\n  color:var(--cyan)}\n.ds-text {font-family:var(--sans);cursor:pointer}.ds-text:focus-visible {outline:2px solid var(--cyan);outline-offset:5px}\n.ds-arrow {width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;vertical-align:middle}"
+    },
+    {
+      "name": "Nickname field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Recessed field with visible focus.",
+      "html": "<input class=\"ds-input\" aria-label=\"Your nickname\" placeholder=\"What should we call you?\">",
+      "css": ".ds-input {\n  width:100%;\n  height:46px;\n  border:1px solid #283c4a;\n  background:#0b1622;\n  border-radius:5px;\n  padding:0 13px;\n  color:var(--text);\n  transition:border-color .2s}\n.ds-input::placeholder {\n  color:#8197a8;\n  font-size:12px}\n.ds-input:hover {\n  border-color:#426372}\n.ds-input:focus {\n  border-color:var(--cyan);\n  outline:1px solid var(--cyan)}\n.ds-input {font:14px/1.6 var(--sans);caret-color:var(--cyan)}"
+    },
+    {
+      "name": "Main navigation",
+      "kind": "nav",
+      "description": "Two text destinations with active underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><button class=\"ds-link ds-active\">The explorer</button><button class=\"ds-link\">Leaderboard</button></nav>",
+      "css": ".ds-nav {\n  display:flex;\n  gap:34px;\n  margin-left:auto;\n  height:100%;\n  align-items:center}\n.ds-link {\n  border:0;\n  background:none;\n  color:var(--muted);\n  height:100%;\n  padding:0;\n  position:relative;\n  font-size:13px}\n.ds-link.ds-active {\n  color:var(--text)}\n.ds-link.ds-active:after {\n  content:'';\n  position:absolute;\n  bottom:-1px;\n  height:2px;\n  left:0;\n  right:0;\n  background:var(--cyan)}\n.ds-link:hover {\n  color:var(--cyan)}\n.ds-nav{height:64px;margin-left:0;font-family:var(--sans)}.ds-link{cursor:pointer}.ds-link:focus-visible {outline:2px solid var(--cyan);outline-offset:5px}"
+    },
+    {
+      "name": "Prediction choice",
+      "kind": "card",
+      "description": "Radio choice with teal selected surface.",
+      "html": "<label class=\"ds-prediction\"><input type=\"radio\" name=\"ds-prediction\"><span class=\"ds-radio\"></span><span><strong>First 100,000 digits</strong><small>Somewhere near the beginning</small></span></label>",
+      "css": ".ds-prediction {\n  display:flex;\n  align-items:center;\n  gap:12px;\n  border:1px solid #263c4a;\n  border-radius:5px;\n  margin-top:8px;\n  padding:13px;\n  background:#0a1520;\n  cursor:pointer;\n  position:relative;\n  transition:background .2s,border-color .2s}\n.ds-prediction:hover {\n  border-color:#537786}\n.ds-prediction:has(input:checked) {\n  border-color:#71dce0;\n  background:#102a34}\n.ds-radio {\n  width:14px;\n  height:14px;\n  border:1px solid #5b7384;\n  border-radius:50%;\n  flex-shrink:0;\n  display:grid;\n  place-items:center}\n.ds-prediction input:checked+.ds-radio {\n  border-color:var(--cyan)}\n.ds-prediction input:checked+.ds-radio:after {\n  content:'';\n  width:6px;\n  height:6px;\n  background:var(--cyan);\n  border-radius:50%}\n.ds-prediction strong {\n  display:block;\n  font:500 12px var(--sans)}\n.ds-prediction small {\n  display:block;\n  font:11px var(--sans);\n  color:var(--muted);\n  margin-top:4px}\n.ds-prediction{color:var(--text)}.ds-prediction input{position:absolute;opacity:0;width:1px;height:1px}.ds-prediction:has(input:focus-visible){outline:2px solid var(--cyan);outline-offset:3px}"
+    },
+    {
+      "name": "Mode selector",
+      "kind": "custom",
+      "description": "Two mutually exclusive sequence formats.",
+      "html": "<div class=\"ds-modes\"><label><input type=\"radio\" name=\"ds-mode\" checked><span>MMDD <small>Month + day</small></span></label><label><input type=\"radio\" name=\"ds-mode\"><span>YYYYMMDD <small>Full birthday</small></span></label></div>",
+      "css": ".ds-modes {\n  display:grid;\n  grid-template-columns:1fr 1fr;\n  border:1px solid #283c4a;\n  border-radius:5px;\n  background:#0b1622;\n  padding:4px;\n  gap:4px}\n.ds-modes label {\n  position:relative;\n  cursor:pointer}\n.ds-modes label>span {\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:9px;\n  padding:9px 6px;\n  font:11px var(--mono);\n  border:1px solid transparent;\n  border-radius:3px}\n.ds-modes small {\n  font:11px var(--sans);\n  color:var(--muted)}\n.ds-modes input:checked+span {\n  background:#17343d;\n  border-color:#37636a;\n  color:var(--cyan)}\n.ds-modes{color:var(--text)}.ds-modes input{position:absolute;opacity:0;width:1px;height:1px}.ds-modes input:focus-visible+span{outline:2px solid var(--cyan);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Scientific Cybertech Exhibit",
+    "overview": "Near-black navy provides a quiet field for luminous cyan readouts, orbital geometry and precise mathematical data. The implemented world follows the user's science-exhibit direction through thin rules, an understated grid and a digit terminal.\n\nControls remain compact and orderly. Space Grotesk gives the exhibit its voice, DM Sans supports instructions, and IBM Plex Mono separates instrument data from prose. The shipped palette uses cyan alone as its principal accent; the purple mentioned in PRODUCT.md has no implemented role.",
+    "keyCharacteristics": [
+      "Cyan instrument readouts on deep navy.",
+      "Thin borders and restrained luminous depth.",
+      "Distinct display, instructional and mathematical type roles."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Rule",
+        "body": "Cyan marks interactive state, mathematical discovery or the instrument's focal geometry.",
+        "section": "colors"
+      },
+      {
+        "name": "The Data Voice Rule",
+        "body": "Use mono for sequences, positions and instrument metadata; use sans-serif for explanations and form choices.",
+        "section": "typography"
+      },
+      {
+        "name": "The Instrument Light Rule",
+        "body": "Glow reinforces the scientific instrument and active discovery; panel boundaries remain thin and precise.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use cyan to connect primary actions, selected states and mathematical discoveries.",
+      "Do retain the separate display, instruction and data type roles.",
+      "Do stack the workspace and retain visible keyboard focus on narrow screens.",
+      "Do honor reduced-motion preference for scan and reveal effects."
+    ],
+    "donts": [
+      "Don't turn local leaderboard medal colors into competing brand accents.",
+      "Don't replace the instrument's fine framing with hard offset shadows.",
+      "Don't inherit the build's remaining decorative uppercase kickers or tiny mobile metadata as reusable patterns; they are recorded defects, not system rules."
+    ]
+  }
+}

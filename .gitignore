@@ -15,3 +15,6 @@ node_modules/
 .impeccable/mocks/
 .impeccable/build/
 .impeccable/*.local.json
+
+# Local design-workflow notes
+.impeccable/direction.md
