@@ -1,0 +1,65 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    name: Test and package website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Test search, storage, and pi signs
+        run: npm test
+
+      - name: Verify pi dataset integrity
+        run: npm run verify-data
+
+      - name: Package public website files
+        env:
+          PI_SITE_DIRECTORY: ${{ runner.temp }}/pi-finder-site
+        run: |
+          mkdir -p "$PI_SITE_DIRECTORY"
+          cp index.html search.html result.html leaderboard.html style.css "$PI_SITE_DIRECTORY/"
+          cp -R js assets "$PI_SITE_DIRECTORY/"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/pi-finder-site
+
+  deploy:
+    name: Publish website
+    needs: prepare
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

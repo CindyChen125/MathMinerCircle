@@ -101,11 +101,18 @@ A future backend can replace `createStorage()` with an implementation exposing t
 
 ## GitHub Pages deployment
 
-1. Add this folder’s contents to a GitHub repository and push them.
-2. In the repository’s Settings → Pages, choose **Deploy from a branch**, select the branch and **/ (root)**, then save.
-3. Open the HTTPS Pages URL once deployment completes.
+This repository includes `.github/workflows/deploy-pages.yml`, which publishes through **GitHub Actions**.
 
-All application asset paths are relative, so repository subpaths work. No build command, dependencies, or environment variables are needed. Other static hosts can publish the project root directly. Avoid renaming the data asset without updating its fetch path.
+1. Open the repository’s **Settings → Pages** and set **Source → GitHub Actions**. There is no branch/folder selection in this mode.
+2. Commit and push the workflow to `main` (`git push`).
+3. Open **Actions → Deploy website to GitHub Pages** and watch the run. If the workflow was already pushed before enabling Pages, use **Run workflow → main** to start it again.
+4. After both jobs succeed, open the URL shown in the deployment environment. For this repository the expected URL is https://cindychen125.github.io/MathMinerCircle/.
+
+Each future push to `main` redeploys automatically. The workflow runs the automated tests and dataset integrity check before uploading only the four HTML pages, stylesheet, JavaScript modules, and assets. Documentation, tests, Git history and local review files are excluded from the published website. No custom secrets, dependency installation or framework build are needed.
+
+If GitHub requests deployment approval, review the pending **github-pages** environment in the Actions run. If setup reports that Pages is unavailable, check **Settings → Pages → Source → GitHub Actions**, then rerun the workflow.
+
+All application asset paths are relative, so repository subpaths work. Other static hosts can publish the same HTML, CSS, `js/` and `assets/` files. Avoid renaming the data asset without updating its fetch path.
 
 ## Browser checks
 
