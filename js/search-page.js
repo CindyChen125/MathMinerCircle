@@ -16,7 +16,7 @@ export function initSearch() {
   }
   function updatePreview() {
     const draft = currentDraft();
-    $('mode-help').textContent = draft.mode === 'MMDD' ? 'Four digits. A small sequence in a very big number.' : 'Eight digits are much less likely to appear in the first million.';
+    $('mode-help').textContent = draft.mode === 'MMDD' ? '4 digits: month + day.' : '8 digits; less likely to be found.';
     try { $('sequence').textContent = formatBirthday(Number(draft.year), Number(draft.month), Number(draft.day), draft.mode); }
     catch { $('sequence').textContent = draft.mode === 'MMDD' ? '— — — —' : '— — — — — — — —'; }
     try { session.saveDraft(draft); } catch { /* A clear error appears before scanning if session storage is blocked. */ }

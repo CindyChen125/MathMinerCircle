@@ -1258,3 +1258,7 @@ a.secondary-button { display:inline-flex; align-items:center; justify-content:ce
  .sign-reading h3 { font-size:27px; }
  .pi-sign .sign-description { max-width:55ch; }
 }
+
+/* Keep the form heading separate from inputs after trimming decorative copy. */
+.entry-panel #scan-form { margin-top:24px; }
+
