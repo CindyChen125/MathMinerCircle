@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-10-20T10:17:44.795337+00:00",
-  "title": "Design System: π Finder",
+  "title": "Design System: π Finder — Neon Spectrum",
   "extensions": {
     "colorMeta": {
       "bg": {
@@ -265,6 +265,17 @@
       "palette": "Existing cyan, muted, text, line and navy tokens.",
       "motion": "Existing revealed animation; global reduced-motion override applies.",
       "truth": "Actual next decimal digit selects a fictional reading; no assigned sign when match or following digit is unavailable."
+    },
+    "currentPalette": {
+      "canvas": "#100b24",
+      "surface": "#211638",
+      "text": "#fbf7ff",
+      "muted": "#c8bbde",
+      "pink": "#ff9cde",
+      "blue": "#86e5ff",
+      "violet": "#bca0ff",
+      "gold": "#ffe798",
+      "line": "#51406b"
     }
   },
   "components": [
@@ -322,8 +333,8 @@
     }
   ],
   "narrative": {
-    "northStar": "The Scientific Cybertech Exhibit",
-    "overview": "Near-black navy provides a quiet field for luminous cyan readouts, orbital geometry and precise mathematical data. The implemented world follows the user's science-exhibit direction through thin rules, an understated grid and a digit terminal.\n\nControls remain compact and orderly. Space Grotesk gives the exhibit its voice, DM Sans supports instructions, and IBM Plex Mono separates instrument data from prose. The shipped palette uses cyan alone as its principal accent; the purple mentioned in PRODUCT.md has no implemented role.",
+    "northStar": "Neon Spectrum",
+    "overview": "Violet canvas with pink and blue ambient illumination. Pink actions and selections, blue mathematical data, gold scores. Minimal copy and opaque reading surfaces preserve usability.",
     "keyCharacteristics": [
       "Cyan instrument readouts on deep navy.",
       "Thin borders and restrained luminous depth.",

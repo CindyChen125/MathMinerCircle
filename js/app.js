@@ -1,7 +1,9 @@
+import {initAmbient} from './ambient.js?v=8';
+initAmbient();
 // Each document loads only the behavior its page needs. Navigation uses native links.
 const page = document.body.dataset.page;
 if (page === 'search') {
-  const {initSearch} = await import('./search-page.js?v=4');
+  const {initSearch} = await import('./search-page.js?v=6');
   initSearch();
 } else if (page === 'result') {
   const {initResult} = await import('./result-page.js?v=4');

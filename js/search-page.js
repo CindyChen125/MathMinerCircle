@@ -29,6 +29,8 @@ export function initSearch() {
     $('terminal').classList.toggle('scanning', value);
     $('scan-state').hidden = !value;
     $('terminal-idle').hidden = value;
+    $('scanner-hub').hidden = !value;
+    $('terminal').classList.remove('scan-locked');
     document.querySelector('.workspace').classList.toggle('scan-workspace', value);
     document.querySelector('.journey-progress').children[0].toggleAttribute('aria-current', !value);
     document.querySelector('.journey-progress').children[1].toggleAttribute('aria-current', value);
@@ -86,13 +88,19 @@ export function initSearch() {
     }
     const result = searchDigits(digits, sequence);
     const discovery = {id: crypto.randomUUID(), timestamp: Date.now(), saved: false, draft};
+    $('scanner-target').textContent = sequence;
+    $('scanner-caption').textContent = 'Target sequence';
+    $('scanner-phase').textContent = '01 / 03';
+    // One fixed, verified passage: movement never swaps random chunks per frame.
+    $('digit-stream').textContent = digits.slice(0,2400);
     setBusy(true);
     $('scan-label').textContent = 'INITIALIZING SEARCH…';
-    $('scan-progress').style.width = '0%';
+    $('scan-progress').style.transform = 'scaleX(0)';
     $('scan-label').tabIndex = -1;
     $('scan-label').focus({preventScroll: true});
     $('terminal').scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'center'});
     const start = performance.now();
+    let previousPhase = -1;
     let finished = false;
     finishScan = () => {
       if (finished) return;
@@ -112,12 +120,16 @@ export function initSearch() {
     };
     function tick(now) {
       const elapsed = now-start, progress = Math.min(1,elapsed/4000);
-      $('scan-progress').style.width = `${progress*100}%`;
-      $('scan-label').textContent = progress < .25 ? 'INITIALIZING SEARCH…' : progress < .76 ? 'ANALYZING π SEQUENCE…' : result.position === null ? 'SEARCH WINDOW COMPLETE' : 'SEQUENCE LOCATED';
-      if (!reduced.matches) {
-        const offset = Math.floor((1-(1-progress)**3)*Math.min(result.position ?? 1000000,999000));
-        $('digit-stream').textContent = digits.slice(offset,offset+720);
-        $('digit-stream').style.transform = `translateY(-${(elapsed/22)%30}px)`;
+      $('scan-progress').style.transform = `scaleX(${progress})`;
+      const phase = progress < .22 ? 0 : progress < .78 ? 1 : 2;
+      if (phase !== previousPhase) {
+        previousPhase = phase;
+        $('scan-label').textContent = ['INITIALIZING SEARCH…','EXPLORING π…',result.position === null ? 'SEARCH COMPLETE' : 'SEQUENCE LOCATED'][phase];
+        $('scanner-phase').textContent = `${String(phase+1).padStart(2,'0')} / 03`;
+        if (phase === 2) {
+          $('terminal').classList.add('scan-locked');
+          $('scanner-caption').textContent = result.position === null ? 'Not in this million' : `Position #${result.position.toLocaleString('en-US')}`;
+        }
       }
       if (progress >= 1) finishScan();
       else frame = requestAnimationFrame(tick);

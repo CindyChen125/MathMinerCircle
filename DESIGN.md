@@ -2,17 +2,20 @@
 name: π Finder
 description: A scientific instrument for personal discovery in the digits of π.
 colors:
-  bg: "#070d16"
-  line: "#20313e"
-  muted: "#93a5b5"
-  text: "#edf4f7"
-  cyan: "#6ae9ec"
-  field: "#0b1622"
-  field-border: "#283c4a"
-  button-ink: "#05202a"
-  button-hover: "#a7ffff"
-  secondary: "#10232e"
-  terminal-bar: "#0d1823"
+  pink: "#ff9cde"
+  violet: "#bca0ff"
+  gold: "#ffe798"
+  bg: "#100b24"
+  line: "#51406b"
+  muted: "#c8bbde"
+  text: "#fbf7ff"
+  cyan: "#86e5ff"
+  field: "#211638"
+  field-border: "#6c5589"
+  button-ink: "#2c1239"
+  button-hover: "#ffbce9"
+  secondary: "#372046"
+  terminal-bar: "#2b1b43"
   error: "#ffb8ad"
 typography:
   display:
@@ -53,7 +56,7 @@ spacing:
   section: "32px"
 components:
   button-primary:
-    backgroundColor: "{colors.cyan}"
+    backgroundColor: "{colors.pink}"
     textColor: "{colors.button-ink}"
     rounded: "{rounded.control}"
     padding: "12px 20px"
@@ -79,14 +82,14 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Scientific Cybertech Exhibit"**
+**Creative North Star: "Neon Spectrum"**
 
-Near-black navy provides a quiet field for luminous cyan readouts, orbital geometry and precise mathematical data. The implemented world follows the user's science-exhibit direction through thin rules, an understated grid and a digit terminal.
+Deep violet carries pink and blue ambient light, a faint star field, luminous orbital geometry and precise mathematical data. The implemented world follows the user's science-exhibit direction through thin rules, an understated grid and a digit terminal.
 
-Controls remain compact and orderly. Space Grotesk gives the exhibit its voice, DM Sans supports instructions, and IBM Plex Mono separates instrument data from prose. The shipped palette uses cyan alone as its principal accent; the purple mentioned in PRODUCT.md has no implemented role.
+Controls remain compact and orderly. Space Grotesk gives the exhibit its voice, DM Sans supports instructions, and IBM Plex Mono separates instrument data from prose. Pink owns primary actions and selection. Blue marks mathematical data. Lavender defines surfaces and focus context; gold highlights scores and lucky numbers.
 
 **Key Characteristics:**
-- Cyan instrument readouts on deep navy.
+- Pink actions and blue readouts on illuminated violet.
 - Thin borders and restrained luminous depth.
 - Distinct display, instructional and mathematical type roles.
 
@@ -108,7 +111,7 @@ A cool navy field supports one bright instrument accent and subdued blue-gray ex
 
 Error messages use the warm `error` color. Rank medal colors are local leaderboard details, not additional brand accents.
 
-**The Signal Rule.** Cyan marks interactive state, mathematical discovery or the instrument's focal geometry.
+**The Signal Rule.** Pink marks action and selection; blue marks data; gold marks points and lucky numbers.
 
 ## Typography
 
@@ -140,9 +143,9 @@ The mobile home orbit recedes behind the headline with reduced opacity. The sear
 Thin borders and dark tonal changes provide the structural depth. Diffuse cyan glows belong to live dots, orbital geometry and the scan line. Primary-action hover adds a soft glow; no hard offset shadow vocabulary exists.
 
 ### Shadow Vocabulary
-- **Action hover:** (`0 6px 24px #6ae9ec15`).
-- **Live signal:** (`0 0 9px #6ae9ec55`).
-- **Scan line:** (`0 0 24px #6ae9ec88`).
+- **Action hover:** (`0 6px 24px #86e5ff15`).
+- **Live signal:** (`0 0 9px #86e5ff55`).
+- **Scan line:** (`0 0 24px #86e5ff88`).
 
 **The Instrument Light Rule.** Glow reinforces the scientific instrument and active discovery; panel boundaries remain thin and precise.
 
@@ -182,3 +185,13 @@ Framed top and bottom bars enclose the dimmed mono stream, target and idle instr
 - **Don't** turn local leaderboard medal colors into competing brand accents.
 - **Don't** replace the instrument's fine framing with hard offset shadows.
 - **Don't** inherit the build's remaining decorative uppercase kickers or tiny mobile metadata as reusable patterns; they are recorded defects, not system rules.
+
+## Current theme application
+The final Neon Spectrum section of style.css overrides the earlier instrument styles. The body uses three fixed radial ambient lights over violet; content panels remain opaque for readability. Primary controls are pink with dark text and 12px corners; inputs have 9px corners. Navigation uses lavender pill selection. The orbital π gains a pink elliptical ring, violet illumination and a gold locator. Motion remains limited to existing interactions and respects reduced-motion settings. Home retains only the title, short description and Start action.
+
+### Ambient and scan motion
+The star-field layer carries slow 28-second transform-based aurora drift; a second glow follows fine-pointer input with interpolation. A tab-persistent Pause motion control and system reduced-motion preference stop effects. Scanning centers a three-ring instrument around the target sequence. One fixed verified digit passage translates over four seconds, while a light band sweeps once; the final phase highlights the true position or the completed not-found search. No random or frame-swapped digit rain is used.
+
+The interactive background now uses a clearly visible 520px pink/violet spotlight, stronger parallax, and 1.4-second click/tap rings. Aurora drift is 18 seconds. Effects stay behind controls, ignore pointer hits, and turn off with Pause motion or reduced-motion preferences.
+
+Refinement: visible cursor outlines and click rings are removed. Pointer light is diffuse and low-opacity, interpolation is slower, parallax travel is reduced, and ambient drift returns to 26 seconds. The response stays perceptible without becoming a foreground effect.
