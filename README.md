@@ -120,6 +120,6 @@ Verify Home → Search → Result → Leaderboard navigation, browser Back/Forwa
 
 ## Motion
 
-Ambient aurora layers drift using CSS transforms, with a soft, diffuse 520px pointer-following glow and smoothly interpolated parallax on fine-pointer devices. Touching the background repositions the glow; there are no visible cursor rings or click bursts. A fixed Pause motion control persists within the tab session. Reduced-motion preferences disable movement automatically. Background work is suspended when the page is hidden.
+Ambient aurora layers drift using CSS transforms, with a soft, diffuse 520px pointer-following glow and smoothly interpolated parallax on fine-pointer devices. Touching the background repositions the glow; there are no visible cursor rings or click bursts. The background is always active during normal use, with no in-site motion toggle. Reduced-motion preferences disable movement automatically. Background work is suspended when the page is hidden.
 
 The four-second scanner uses a single fixed passage of verified π digits, continuously translated once rather than replacing chunks each frame. Rotating rings, a light pass, three status phases and a final gold lock state frame the target sequence. The progress indicator is presentation only; Skip animation remains available. Search and scoring are independent of motion.

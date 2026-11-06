@@ -1408,10 +1408,6 @@ dialog::backdrop { background:#0d061cbd; }
 }
 /* Keep ambient lighting vivid without moving or softening reading surfaces. */
 .page-grid { opacity:.65; }
-.motion-toggle { position:fixed; bottom:16px; right:18px; z-index:20; padding:9px 13px; border:1px solid #b491d980; border-radius:20px; background:#20132fed; color:#e9d8ff; font:11px var(--sans); min-height:36px; }
-.motion-toggle:hover { border-color:var(--pink); color:white; }
-.motion-toggle:disabled { opacity:.7; cursor:default; }
-footer { padding-bottom:72px; }
 .scanning .digit-window { height:410px; isolation:isolate; }
 .scanning .digit-text { opacity:.3; mask-image:linear-gradient(transparent,#000 18%,#000 82%,transparent); animation:scan-digits 4s cubic-bezier(.12,.5,.2,1) both; font-size:15px; line-height:2.5; letter-spacing:8px; }
 .scanning .digit-window::after { background:radial-gradient(ellipse at center,#160e2eea 0,#160e2eb8 32%,transparent 72%); z-index:1; }
@@ -1431,8 +1427,8 @@ footer { padding-bottom:72px; }
 .scan-locked .scanner-orbits { border-color:#ffe798a8; box-shadow:0 0 70px #ffe79814; transition:border-color .45s,box-shadow .45s; }
 .scan-locked .scanner-readout strong { color:var(--gold); transition:color .45s; }
 .scan-locked .scanner-orbits i { animation-play-state:paused; border-top-color:var(--gold); }
-html[data-motion="paused"] *,html.motion-suspended * { animation-play-state:paused!important; }
-html[data-motion="paused"] .page-grid::before,html.motion-suspended .page-grid::before { animation-play-state:paused!important; }
+html.motion-suspended * { animation-play-state:paused!important; }
+html.motion-suspended .page-grid::before { animation-play-state:paused!important; }
 @keyframes aurora-drift { from{transform:translate3d(-3%,-2%,0) rotate(-7deg) scale(1)} to{transform:translate3d(4%,3%,0) rotate(8deg) scale(1.1)} }
 @keyframes scan-digits { from{transform:translate3d(0,0,0)} to{transform:translate3d(0,-180px,0)} }
 @keyframes light-pass { from{transform:translate3d(0,-120px,0)} to{transform:translate3d(0,410px,0)} }
@@ -1444,7 +1440,6 @@ html[data-motion="paused"] .page-grid::before,html.motion-suspended .page-grid::
  .scanner-readout strong { font-size:clamp(22px,7vw,32px); letter-spacing:1px; }
  .scan-workspace .scan-state { padding:22px 18px; }
  .scan-workspace .scan-state h3 { font-size:12px; }
- .motion-toggle { bottom:10px; right:12px; }
 }
 @media(prefers-reduced-motion:reduce) {
  .page-grid::before { animation:none; }
@@ -1472,7 +1467,6 @@ html[data-motion="paused"] .page-grid::before,html.motion-suspended .page-grid::
  pointer-events:none; animation:pointer-burst 1.4s cubic-bezier(.16,1,.3,1) forwards;
 }
 @keyframes pointer-burst { from{transform:scale(.2);opacity:.85} to{transform:scale(4);opacity:0} }
-html[data-motion="paused"] .pointer-spotlight,html[data-motion="paused"] .pointer-ripple { display:none; }
 @media(prefers-reduced-motion:reduce) { .pointer-spotlight,.pointer-ripple { display:none; } }
 
 /* Softer reactive atmosphere: no visible cursor rings or click bursts. */

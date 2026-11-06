@@ -1,4 +1,4 @@
-import {initAmbient} from './ambient.js?v=8';
+import {initAmbient} from './ambient.js?v=9';
 initAmbient();
 // Each document loads only the behavior its page needs. Navigation uses native links.
 const page = document.body.dataset.page;
